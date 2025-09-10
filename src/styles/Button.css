@@ -1,0 +1,40 @@
+/* Button.css */
+
+.joke-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #70a03a;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  font-family: inherit;
+}
+
+.joke-button:hover:not(:disabled) {
+  background-color: #c1f590;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.joke-button:active:not(:disabled) {
+  background-color: #297910;
+  transform: translateY(0);
+}
+
+.joke-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.joke-button:focus {
+  outline: 2px solid #70a03a;
+  outline-offset: 2px;
+}
